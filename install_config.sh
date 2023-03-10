@@ -1,3 +1,5 @@
+#! /bin/bash
+
 IPADDR=$(hostname -I | cut -f1 -d ' ')
 echo "$IPADDR  $HOSTNAME.proxmox.com $HOSTNAME" | sudo tee -a /etc/hosts #Add an /etc/hosts entry for your IP address
 
